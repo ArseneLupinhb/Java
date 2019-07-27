@@ -1,0 +1,158 @@
+body {
+	margin: 0 auto;
+	/*字体大小是页面默认大小的100%，即16像素*/
+	font: normal 100% Helvetica, Arial, sans-serif;
+	width: 100%;
+}
+/*头部CSS注释线*/
+.header {
+	width: 100%;
+	height: 65px;
+	display: inline-block;
+}
+
+.logo {
+	width: 15%;
+	height: 100%;
+	margin: 1%;
+	float: left;
+	margin-left: 2%;
+}
+
+.navbar {
+	width: 38%;
+	/*height: 45px;*/
+	height: 100%;
+	float: left;
+	margin-top: 2%;
+}
+
+.navbar li {
+	width: 16%;
+	/*height: 30px;*/
+	height: 100%;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	font-size: 16px;
+	color: #3e4839;
+}
+
+.wrapper {
+	width: 65%;
+	height: 50px;
+	margin-left: 62%;
+	margin-top: 1.5%;
+}
+
+input {
+	width: 40%;
+	height: 25px;
+	border: 2px solid #ccc;
+	position: relative;
+	float: left;
+}
+
+.research {
+	width: 2%;
+	height: 21px;
+	background-image: url(../images/research.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	margin-top: 0.5%;
+	margin-left: 24.5%;
+}
+
+.btn {
+	float: left;
+	margin-top: 2px;
+}
+
+.btn button {
+	width: auto;
+	height: 27px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	float: left;
+	margin-left: 8px;
+}
+
+/*头部CSS注释结束*/
+.center {
+	width: 100%;
+	position: relative;
+}
+
+.bkground {
+	width: 100%;
+	height: 1200px;
+	background-image: url(../images/introduction1.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 1;
+}
+
+.Title {
+	width: 25%;
+	/*height: 100px;*/
+	height: 100%;
+	margin-left: 10%;
+	margin-top: 2%;
+	color: #607869;
+	font-size: 3.5em;
+	float: left;
+	display: inline-block;
+}
+
+.details {
+	width: 60%;
+	color: #607869;
+	font-size: 1.05em;
+	float: left;
+	display: inline-block;
+}
+
+.details p {
+	display: inline;
+	float: left;
+	margin: 0;
+	margin-top: 3%;
+}
+
+hr {
+	float: left;
+	width: 0.6%;
+	height: 65px;
+	margin-top: 2%;
+	margin-right: 1%;
+	background-color: #607869;
+}
+
+.Itext {
+	color: #959b9a;
+	width: 91%;
+	height: 850px;
+	position: absolute;
+	z-index: 99;
+	background-color: #faf4f4;
+	left: 4%;
+	margin-top: 8%;
+}
+
+.Itext p, ol {
+	margin-left: 4%;
+	margin-right: 3%;
+	font-size: 1.01em;
+}
+
+.Ifooter {
+	width: 100%;
+	height: 150px;
+	font-size: 0.9em;
+	color: #929191;
+	position: absolute;
+	margin: 0;
+	margin-top: 75%;
+}

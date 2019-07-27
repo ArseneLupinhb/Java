@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 1300px;
+	/*background-color: #ccc;*/
+}
+
+header {
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #000;
+}
+
+.logo {
+	float: left;
+	margin-left: 35px;
+	margin-right: 50px;
+}
+
+nav {
+	float: left;
+	margin-top: 15px;
+}
+
+.main-nav li {
+	float: left;
+	margin-right: 35px;
+	list-style: none;
+	font-family: "Microsoft YaHei ";
+}
+
+.head-detail {
+	float: right;
+}
+
+.upload {
+	width: 1300px;
+	height: 500px;
+	background-color: #faf4f4;
+}
+
+.sub-nav {
+	margin: 20px auto;
+	height: 35px;
+	width: 1260px;
+	border-bottom: 2px solid #d2d2d2;
+	/*background-color: #faf4f4;*/
+}
+
+.sub-nav li {
+	margin-left: 30px;
+	height: 35px;
+	width: 42px;
+	float: left;
+	list-style: none;
+	text-align: center;
+	line-height: 35px;
+}
+
+.focus {
+	border-bottom: 2px solid #000000;
+}
+
+.uploading {
+	margin: 0 auto;
+	padding-left: 30px;
+	width: 1230px;
+	/*background-color: #faf4f4;*/
+}
+
+#up-pic {
+	cursor: pointer;
+}
+
+#close-box {
+	z-index: 99;
+	position: fixed;
+	top: 120px;
+	left: 59px;
+	/*overflow: hidden;*/
+	height: 30px;
+	border: 1px solid #cccccc;
+	background-color: #fff;
+	/*border-bottom: 1px solid #ccc;*/
+	padding-right: 10px;
+	padding-left: 10px;
+	width: 1220px;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+}
+
+#close-box p {
+	line-height: 31px;
+}
+
+#mask {
+	z-index: 99;
+	position: fixed;
+	top: 150px;
+	left: 59px;
+	background-color: #ffffff;
+	/*border-top:1px solid #d2d2d2;*/
+	/*border-left: 0;*/
+	border: 1px solid #ccc;
+}
+
+#close {
+	border: 0;
+	width: 16px;
+	height: 16px;
+	/*float: right;*/
+	/*margin-top: 8px;*/
+	background-image: url("../images/delete.png");
+	position: absolute;
+	top: 5px;
+	right: 8px;
+}

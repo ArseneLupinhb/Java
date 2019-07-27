@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>sydsNew</display-name>
+	<filter>
+		<filter-name>EncodingFilter</filter-name>
+		<filter-class>com.adou.syds.web.filter.EncodingFilter</filter-class>
+		<init-param>
+			<param-name>charset</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/404.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<filter>
+		<display-name>LoginFilter</display-name>
+		<filter-name>LoginFilter</filter-name>
+		<filter-class>com.adou.syds.web.filter.LoginFilter</filter-class>
+	</filter>
+	<filter>
+		<display-name>AdminLoginFilter</display-name>
+		<filter-name>AdminLoginFilter</filter-name>
+		<filter-class>com.adou.syds.web.filter.AdminLoginFilter</filter-class>
+	</filter>
+
+
+	<filter-mapping>
+		<filter-name>AdminLoginFilter</filter-name>
+		<url-pattern>/Back/showAlbum.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>AdminLoginFilter</filter-name>
+		<url-pattern>/Back/showImage1.jsp</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>AdminLoginFilter</filter-name>
+		<url-pattern>/Back/showAllAlbum.jsp</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>AdminLoginFilter</filter-name>
+		<url-pattern>/Back/showAllImage.jsp</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>AdminLoginFilter</filter-name>
+		<url-pattern>/Back/manageIndex.jsp</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/uploadPic.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/AlbumServlet</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/photoShow.jsp</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/personalHomepage.jsp</url-pattern>
+	</filter-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index0.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+
+
+  <servlet>
+    <servlet-name>ManageSvt</servlet-name>
+    <servlet-class>com.adou.syds.web.servlet.ManageSvt</servlet-class>
+  </servlet>
+	<servlet>
+		<servlet-name>AdminServlet</servlet-name>
+		<servlet-class>com.adou.syds.web.servlet.AdminServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>GetImgsByPage</servlet-name>
+		<servlet-class>com.adou.syds.web.servlet.GetImgsByPage</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetAlbumsByPage</servlet-name>
+		<servlet-class>com.adou.syds.web.servlet.GetAlbumsByPage</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ImageServlet</servlet-name>
+		<servlet-class>com.adou.syds.web.servlet.ImageServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UploadServlet</servlet-name>
+		<servlet-class>com.adou.syds.web.servlet.UploadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AlbumServlet</servlet-name>
+		<servlet-class>com.adou.syds.web.servlet.AlbumServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>com.adou.syds.web.servlet.UserServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>BaseServlet</servlet-name>
+		<servlet-class>com.adou.syds.web.servlet.BaseServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>PraiseServlet</servlet-name>
+		<servlet-class>com.adou.syds.web.servlet.PraiseServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SearchServlet</servlet-name>
+		<servlet-class>com.adou.syds.web.servlet.SearchServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>GetImgCount</servlet-name>
+		<servlet-class>com.adou.syds.web.servlet.GetImgCount</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetImgCount</servlet-name>
+		<url-pattern>/GetImgCount</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>PriaseServlet</servlet-name>
+		<servlet-class>com.adou.syds.web.servlet.PriaseServlet</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>com.adou.syds.web.servlet.DownloadServlet</servlet-class>
+  </servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>AdminServlet</servlet-name>
+		<url-pattern>/AdminServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ImageServlet</servlet-name>
+		<url-pattern>/ImageServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadServlet</servlet-name>
+		<url-pattern>/UploadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AlbumServlet</servlet-name>
+		<url-pattern>/AlbumServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/UserServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BaseServlet</servlet-name>
+		<url-pattern>/BaseServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PraiseServlet</servlet-name>
+		<url-pattern>/PraiseServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SearchServlet</servlet-name>
+		<url-pattern>/SearchServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PriaseServlet</servlet-name>
+		<url-pattern>/PriaseServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetAlbumsByPage</servlet-name>
+		<url-pattern>/GetAlbumsByPage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetImgsByPage</servlet-name>
+		<url-pattern>/GetImgsByPage</url-pattern>
+	</servlet-mapping>
+	  <servlet-mapping>
+    <servlet-name>ManageSvt</servlet-name>
+    <url-pattern>/helpManager</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/DownloadServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

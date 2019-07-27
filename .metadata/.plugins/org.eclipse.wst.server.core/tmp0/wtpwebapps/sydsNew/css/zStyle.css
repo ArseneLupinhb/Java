@@ -1,0 +1,128 @@
+body{
+	width: 100%; 
+    margin:0 auto;  
+    font: normal 100% Helvetica, Arial, sans-serif; 
+    position: absolute;
+}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{
+	margin:0;
+	padding:0}  
+body{
+	font:12px simsun Arial;
+	background:#fff
+}  
+a{  text-decoration:none;
+	color:#3e4839;
+	 }  
+a:hover{
+	text-decoration:none; 
+	color:#3e4839;
+	 }
+em{
+	font-style:normal
+}  
+li{
+	list-style:none
+}
+img{
+	border:0;
+	vertical-align:middle;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0}
+button, input, select, textarea{
+	background:#fff; 
+}
+.picL img{
+/*	-webkit-backface-visibility: hidden;
+	-webkit-transition: opacity 0.3s ease-out;
+	-moz-transition: opacity 0.3s ease-out;
+	-o-transition: opacity 0.3s ease-out;
+	transition: opacity 0.3s ease-out;*/
+
+}
+/*img:hover{opacity:0.2}*/
+p{word-wrap:break-word}  
+   .cf:after{content:"";
+    display:table;
+    clear:both
+}  
+.cf{*zoom:1}
+.fl,.layout .fl,.chief{
+	float:left;display:inline
+}
+.fr,.layout .fr,.extra{
+	float:right;
+	display:inline
+}
+h1,h2,h3,dt{
+	font-weight:100;
+	font-size:16px;
+}
+
+/* йср╟ */
+.picBox{overflow:hidden;
+	zoom:1;
+	/*margin:40px auto 0 auto;*/
+	width:100%;
+}
+.picL{
+	overflow:hidden;
+	zoom:1;
+	/*margin-left:-1px;*/
+	margin-left: 1%;
+	width: 100%;
+}
+.picL li{
+	overflow:hidden;
+	position:relative;
+	float:left;
+	display:inline;
+	/*width:199px;
+	height:149px;*/
+	width:23%;
+	height:250px;
+	margin:25px 0 0 15px; 
+	zoom:1  
+}
+.picL li .text{
+	background:#020202;
+	position:absolute;
+	/*width:199px;*/
+	width: 100%;
+	height:80px;
+	top:250px;
+	left:0;
+    opacity: 0.5;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+ }
+.picL li .text b{
+	/*padding:5px 15px;*/
+	color:#fff;
+	font-size:14px;
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	/*font-weight:100;*/
+}
+.picL li .text p{
+	font-size:14px;
+	line-height:24px; 
+   }
+.picL li .text a{
+	color: #fff;
+	display: block;
+	height: 70px;
+	/*padding: 20px;*/
+	font-size: 14px;
+}
+.author{
+	background-color: #ffffff;
+	line-height: 2.0;
+	text-align: center;
+	color: #3e4839
+}
+b img{
+	width: 20px;height:20px;
+}

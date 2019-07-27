@@ -1,0 +1,20 @@
+INDEX VERSION 1.131+C:\Users\AL\OneDrive\code\eclipse_jee\.metadata\.plugins\org.eclipse.jdt.core
+2941706007.index
+598948494.index
+562596335.index
+1657330681.index
+1927203368.index
+760200949.index
+79620338.index
+482880329.index
+1883395386.index
+3603784219.index
+3511066976.index
+3558966496.index
+2544335762.index
+2501692848.index
+3275644208.index
+889639634.index
+2190776201.index
+2713641135.index
+2968775081.index

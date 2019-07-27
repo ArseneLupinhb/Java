@@ -1,0 +1,273 @@
+@charset "utf-8";
+/*个人中心页面的CSS样式*/
+body{
+	font-size: 1.5em;
+	font-family:Microsoft Yahei,SimHei,SimSun;
+	color:#666666;
+}
+a,a:visited{
+	outline: none;
+	color: #1c4f64;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+#container{
+	width: 95%;
+	height: auto;
+	background-color:#faf4f4;
+	margin: auto;
+}
+.black_overlay{
+display: none;
+position: absolute;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+background-color: black;
+z-index:1001;
+-moz-opacity: 0.8;
+opacity:.80;
+filter: alpha(opacity=80);
+}
+.white_content {
+display: none;
+position: absolute;
+top:10%;
+left: 25%;
+width: 50%;
+height: 500px;
+border:1px solid #e5e5e5;
+background-color: #faf4f4;
+z-index:1002;
+overflow: auto;
+}
+form{
+	width: 80%;
+	height: 90%;
+	padding:10px;
+	font-family: SimSun;
+	font-size: 0.8em;
+	color: #878383;
+	margin: auto;
+} 
+form .spanWidth{
+	width: 100px;
+	height: 30px;
+	display: inline-block;
+}
+.banner{
+	width:auto;
+	height: 140px;
+	background-color:#ffffff;
+	color: #666666;
+	margin:40px auto;
+	padding: 20px;
+	/* border: 1px solid #e5e5e5; */
+	box-shadow: 0 0 4px rgba(0,0,0,.2);
+}
+/*用户名的头像,主要为了给头像设置一个白色边框*/
+.userpic{
+	width: auto;
+	height: auto;
+    border: 2px solid #ffffff;
+    float: left;
+    position: relative;left: 10px;bottom: 50px;
+}
+/*用户的基本信息那块*/
+.banner-content{
+	width: 80%;
+	height: 100px;
+	margin: 10px 10px 10px 100px;
+}
+/*用户的用户名称和按钮*/
+.banner-head{
+	width: 90%;
+    height: 50px;
+    margin-left: 180px;
+}
+.banner-username{
+	width: 30%;
+	height: 30px;
+	font-size: 1.5em;
+	font-family:SimSun;
+	font-weight: bold;
+	color: #000000;
+	margin-bottom: 20px;
+	float: left;
+
+}
+.banner-button{
+	width: 100px;
+	height: 30px;
+	margin: 0 0 0px 600px;
+	float: left;
+}
+.banner-button .button{
+width: 80px;
+line-height: 20px;
+text-align: center;
+font-weight: bold;
+color: #fff;
+text-shadow:1px 1px 1px #333;
+border-radius: 2px;
+margin:0 20px 20px 0;
+position: relative;
+overflow: hidden;
+}
+/*用户的详细信息*/
+.banner-userinfor{
+	width: 80%;
+	height: 50px;
+	font-size: 0.7em;
+	font-family: SimSun;
+	font-weight: bold;
+	margin-left: 180px;
+	line-height: 22px;
+}
+.banner-userinfor .left{
+	width: 25%;
+	height: 50px;
+	float: left;
+}
+.banner-userinfor .right{
+	width: 50%;
+	height: 50px;
+	float: left;
+}
+.banner .tabs{
+	width: 100%;
+	border-top: 1px solid #ededed;
+	margin: 10px 0 0 0;
+	position: relative; 
+}
+.banner .tabs .tab{
+	font-family: SimHei;
+	text-align: center;
+	font-size: 16px;
+    height: 40px;
+    line-height: 48px;
+    padding: 0 20px;
+    color: #000;
+    border-right: 1px solid #EDEDED;
+    display: inline-block;
+    text-decoration: none;
+}
+#main{
+	width: auto;
+	height: auto;
+	background-color: #faf;
+}
+/*一个相册*/
+.album {
+	width: 19%;
+	height: 300px;
+	margin: 0px 6px 15px 6px;
+	float: left;
+    background: #ffffff;
+    box-shadow: 0 0 4px rgba(0,0,0,.5);
+}
+
+.album a,.imgs .album img{
+	width: 90%;
+	height: 80%;
+	margin: 5% 5% 0 5%;
+	position: relative;
+	text-decoration: none;
+	display: inline-block;
+	background-position:center center;
+	background-repeat: no-repeat;
+	
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+}
+/*按钮的样式，一共有6中，这里只采用第一种*/
+.album .button{
+width: 100%;
+line-height: 38px;
+text-align: center;
+font-weight: bold;
+color: #fff;
+text-shadow:2px 2px 2px #333;
+border-radius: 5px;
+margin:0 20px 20px 0;
+position: relative;
+overflow: hidden;
+}
+/*第一个框的内边框*/
+.inner{
+	width: 90%;
+	height: 90%;
+	margin: 4.5%;
+	border: 1px dashed #C5C5C5;
+}
+
+/*添加功能*/
+.album .inner img{
+display: block;
+width: 50px;
+height: 50px;
+margin: 50% 40% 0 40%;
+}
+.button{
+width: 140px;
+line-height: 38px;
+text-align: center;
+font-weight: bold;
+color: #fff;
+text-shadow:1px 1px 1px #333;
+border-radius: 5px;
+margin:0 20px 20px 0;
+position: relative;
+overflow: hidden;
+}
+/*选择button父标签中的第6的倍数位置上的button 孩子标签元素。*/
+.button:nth-child(6n){
+margin-right: 0;
+}
+.button.gray{
+color: #8c96a0;
+text-shadow:1px 1px 1px #fff;
+border:1px solid #dce1e6;
+box-shadow: 0 1px 2px #fff inset,0 -1px 0 #a8abae inset;
+background: -webkit-linear-gradient(top,#f2f3f7,#e4e8ec);
+background: -moz-linear-gradient(top,#f2f3f7,#e4e8ec);
+background: linear-gradient(top,#f2f3f7,#e4e8ec);
+}
+
+/*作品集的罩子特效*/
+
+.member-image img{max-width: 100%; vertical-align: middle;}
+h3 {font-size: 24px; font-weight: normal; margin: 10px 0 0; text-transform: uppercase;text-align: center}
+h5 {font-size: 16px; font-weight: 300; margin: 0 0 15px; line-height: 22px;text-align: center;}
+p {font-size: 14px; font-weight: 300; line-height: 22px; padding: 0 30px; margin-bottom: 10px;}
+.social-touch a{display: inline-block; width: 27px; height: 26px; vertical-align: middle; margin: 0 2px; background-image: url(../images/social-icons.png); background-repeat: no-repeat; opacity: 0.7; transition: 0.3s;}
+.social-touch a:hover{opacity: 1; transition: 0.3s;}
+.fb-touch{background-position: 0 0;}
+.tweet-touch{background-position: -35px 0;}
+.linkedin-touch{background-position: -71px 0;}
+.icon-colored .fb-touch{background-position: 0 -27px;}
+.icon-colored .tweet-touch{background-position: -35px -27px;}
+.icon-colored .linkedin-touch{background-position: -71px -27px;}
+
+.effect-2{max-height: 300px; min-height: 300px; overflow: hidden;background-color:rgba(220,234,227,.5);}
+.effect-2 h3{padding-top: 7px; line-height: 33px;}
+.effect-2 .member-image{border-buttom:3px solid #fff;height: 150px; overflow: hidden; width: 100%; transition: 0.4s; display: inline-block; float: none; vertical-align: middle;}
+.effect-2 .member-info{transition: 0.4s;}
+.effect-2 .member-image img{width: 100%; vertical-align: bottom;}
+.effect-2 .social-touch{float: left; left: 0; bottom: 0; overflow: hidden; padding: 5px 0; width: 100%; transition: 0.4s;}
+.effect-2:hover .member-image{height: 81px; transition: 0.4s;}
+
+/*照片的详细特效*/
+pre{font-family:'微软雅黑'}
+.box{padding:20px; background-color:#fff; margin:50px 100px; border-radius:5px;}
+.box a{padding-right:15px;}
+#about_hide{display:none}
+.layer_text{background-color:#fff; padding:20px;}
+.layer_text p{margin-bottom: 10px; text-indent: 2em; line-height: 23px;}
+.button2{display:inline-block; *display:inline; *zoom:1; line-height:30px; padding:0 20px; background-color:#56B4DC; color:#fff; font-size:14px; border-radius:3px; cursor:pointer; font-weight:normal;}
+/* .imgs .album img{width:300px;padding:0 30px 30px;} */

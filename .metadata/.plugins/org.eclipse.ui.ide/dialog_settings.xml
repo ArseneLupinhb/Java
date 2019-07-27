@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\soft_own\codeNote\Projects\java\SupportCetner"/>
+			<item value="D:\soft_own\codeNote\Codes\myeclipse2015.3\SSHShop"/>
+			<item value="C:\Users\12611\OneDrive\code\eclipse_jee\Spring"/>
+			<item value="C:\Users\12611\OneDrive\code\eclipse_jee\sydsNew6"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>
